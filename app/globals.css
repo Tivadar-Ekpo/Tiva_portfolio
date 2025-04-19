@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
+* {
+  font-family: Outfit;
+}
+
+/* Define CSS Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --lightHover: #fcf4ff;
+  --darkHover: #2a004a;
+  --darkTheme: #11001f;
+  --fontOutfit: "Outfit", sans-serif;
+  --boxShadowWhite: 4px 4px #fff;
+  --boxShadowBlack: 4px 4px #939292;
+  /* grid columns */
+  --gridTemplateColumnAuto: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom hover effect */
+.custom-hover:hover {
+  background-color: var(--lightHover);
+  box-shadow: var(--boxShadowBlack);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.contact-bgImage {
+  background-image: url("/tiva_portfolio/assets/public/footer-bg-color.png");
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.lightHover:hover {
+  background-color: var(--lightHover);
+}
+
+/* You can define more specific hover classes if needed */
+.custom-dark-hover:hover {
+  background-color: var(--darkHover);
+}
+
+.custom-dark-theme {
+  background-color: var(--darkTheme);
+}
+
+/*custom grid column */
+.gridColumnAuto {
+  grid-template-columns: var(--gridTemplateColumnAuto);
 }
