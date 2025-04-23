@@ -9,7 +9,7 @@ const Contact = () => {
     
   return (
     <div id='contact' className='w-full px-[12%] py-10 
-    scroll-mt-20 bg-no-repeat dark '>
+    scroll-mt-20 bg-no-repeat'>
         <h4 className="text-center mb-2 text-lg ">Contact Me</h4>
       <h2 className="text-center text-5xl">Get In Touch</h2>
 
@@ -23,14 +23,14 @@ const Contact = () => {
           name='name' 
           placeholder='Enter your name' 
           required 
-          className='flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white' 
+          className='flex-1 p-3 outline-none border border-gray-400 rounded-md text-black bg-white dark:border-[0.spx] dark:bg-[#11001f] dark:text-white' 
         />
         <input 
           type='email' 
           name='email' 
           placeholder='Enter your E-mail' 
           required 
-          className='flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white' 
+          className='flex-1 p-3 outline-none border border-gray-400 rounded-md text-black bg-whitedark:border-[0.spx] dark:bg-[#11001f] dark:text-white' 
         />
       </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
         rows='6' 
         placeholder='Enter your message' 
         required 
-        className='w-full p-4 outline-none border border-gray-400 rounded-md bg-white mb-6'
+        className='w-full p-4 outline-none border border-gray-400 rounded-md text-black bg-white mb-6 dark:border-[0.spx] dark:bg-[#11001f] dark:text-white'
       ></textarea>
 
       <button 
