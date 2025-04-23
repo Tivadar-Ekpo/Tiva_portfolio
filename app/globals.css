@@ -1,29 +1,43 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 * {
   font-family: Outfit;
 }
 
-/* Define CSS Variables */
-:root {
+/* Smooth transition for dark mode toggle */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar,
+header,
+section,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+@theme {
   --lightHover: #fcf4ff;
   --darkHover: #2a004a;
   --darkTheme: #11001f;
   --fontOutfit: "Outfit", sans-serif;
   --boxShadowWhite: 4px 4px #fff;
-  --boxShadowBlack: 4px 4px #939292;
+  --boxShadowBlack: 4px 4px rgba(108, 108, 197, 0.945);
   /* grid columns */
   --gridTemplateColumnAuto: repeat(auto-fit, minmax(200px, 1fr));
+  --breakpoint-3xl: 120rem;
 }
+
 
 /* Custom hover effect */
 .custom-hover:hover {
-  background-color: var(--lightHover);
   box-shadow: var(--boxShadowBlack);
-}
-
-.contact-bgImage {
-  background-image: url("/tiva_portfolio/assets/public/footer-bg-color.png");
 }
 
 .lightHover:hover {
@@ -43,3 +57,5 @@
 .gridColumnAuto {
   grid-template-columns: var(--gridTemplateColumnAuto);
 }
+
+

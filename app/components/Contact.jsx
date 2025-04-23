@@ -4,12 +4,12 @@ import { assets } from '@/assets/assets'
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm("mjkynvqr"); // 👈 replace with your actual Form ID
+    const [state, handleSubmit] = useForm("mjkynvqr"); 
 
     
   return (
     <div id='contact' className='w-full px-[12%] py-10 
-    scroll-mt-20 contact-bgImage bg-no-repeat bg-center '>
+    scroll-mt-20 bg-no-repeat dark '>
         <h4 className="text-center mb-2 text-lg ">Contact Me</h4>
       <h2 className="text-center text-5xl">Get In Touch</h2>
 

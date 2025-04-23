@@ -15,10 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     // adding smooth scrolling in the html tag
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth ">
       
       {/* adding line height with "leading-8" */}
-      <body className={`${outfit.className} antialiased leading-8 overflow-x-hidden`}>
+      <body className={`${outfit.className} antialiased leading-8 overflow-x-hidden dark:bg-[#11001f] dark:text-white`}>
         {children}
       </body>
     </html>
