@@ -9,7 +9,7 @@ const Work = ({isDarkMode}) => {
       <h2 className="text-center text-5xl">My Latest Work</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 ">
-        Welcome to my wed development portfolio! Explore a collection of
+        Welcome to my web development portfolio! Explore a collection of
         projects showcasing my expertise in front-end development.
       </p>
       <div className="grid gridColumnAuto my-10 gap-5 dark:text-black">
