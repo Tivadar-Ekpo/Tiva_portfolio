@@ -15,13 +15,12 @@ const Work = ({ isDarkMode }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-5 dark:text-black">
         {/* Card 1 */}
         <a
-          href="https://v0-kin-g-tiv-a-landing-page-st-git-apexho-3859e6-tivadar-domain.vercel.app/"
+          href="tiva_portfolio\ApexSolutions.html"
           target="_blank"
           rel="noopener noreferrer"
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group border-[0.5]"
           style={{
-            backgroundImage:
-              "url('../assets/apex_image.png')",
+            backgroundImage: "url('../assets/apex_image.png')",
           }}
         >
           <div className="bg-white w-10/12 p-2 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 flex items-center group-hover:-translate-y-3 justify-between duration-500">
@@ -38,19 +37,18 @@ const Work = ({ isDarkMode }) => {
         </a>
 
         {/* Card 2 */}
-        <a
-          href="https://yourwebsite2.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group border-[0.5]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1585241936938-e1d9e174f930?w=600&auto=format&fit=crop&q=60')",
-          }}
-        >
+        <div className="aspect-square rounded-lg relative group border-[0.5] overflow-hidden">
+          <iframe
+            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+            width="800"
+            height="450"
+            src="https://embed.figma.com/design/myVYqRndA1MxXy220250Qi/Past-works?node-id=1-2&embed-host=share"
+            allowFullScreen
+          ></iframe>
+
           <div className="bg-white w-10/12 p-2 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 flex items-center group-hover:-translate-y-3 justify-between duration-500">
             <div>
-              <h2 className="font-semibold">Portfolio Site</h2>
+              <h2 className="font-semibold"></h2>
               <p className="text-sm text-gray-700">
                 Creative web portfolio layout.
               </p>
@@ -59,7 +57,7 @@ const Work = ({ isDarkMode }) => {
               <Image src={assets.send_icon} alt="send icon" className="w-5" />
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Card 3 */}
         <a
